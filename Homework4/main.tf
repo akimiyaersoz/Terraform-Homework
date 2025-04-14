@@ -48,8 +48,6 @@ cidr_blocks = ["0.0.0.0/0"]
 
 tags = var.tags
 }
-
-
 resource "aws_instance" "aws" {
 ami = var.ec2_config["ami_id"]
 instance_type = var.ec2_config["instance_type"]

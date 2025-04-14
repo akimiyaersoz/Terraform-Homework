@@ -26,15 +26,12 @@ type = string
 variable "route_table_names" {
 type =list(string)
 }
-
 variable "allowed_ports" {
 type    = list(number)
 }
-
 variable "ec2_config" {
 type = map(string)
 }
-
 variable "key_name" {
   type = string
-}
+  }
