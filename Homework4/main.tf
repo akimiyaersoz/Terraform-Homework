@@ -54,5 +54,5 @@ instance_type = var.ec2_config["instance_type"]
 subnet_id = aws_subnet.subnets[0].id
 key_name = "my-laptop-key"
 vpc_security_group_ids = [aws_security_group.main.id]
-tags = var.tags
+tags = local.Common_tags
 }
